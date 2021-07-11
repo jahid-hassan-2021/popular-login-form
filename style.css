@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+
+.form-box{height: 250px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border-radius: 10px;
+    padding: 20px;
+}
+.form-box p{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.form-box .form-item{
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-box .form-item input{
+    width: 100%;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 2px 0;
+    border-bottom: 2px solid #fff;
+}
+.form-box .form-item input:focus ~ label{
+    top: -20px;
+    left: 0;
+    font-size: 15px;
+}
+.form-box .form-item label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+
+.form-box input[type="submit"]{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #2d88ff;
+    color: #fff;
+    border: none;
+}
+
+.form_input:not(:placeholder-shown).form_input:not(:focus) ~ .form_label{
+    top: -20px;
+    left: 0;
+    font-size: 15px;
+}
